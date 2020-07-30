@@ -44,7 +44,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/cweill/gotests/gotests/process"
+	"github.com/sorenh/gotests/gotests/process"
 )
 
 var (
