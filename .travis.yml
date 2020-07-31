@@ -7,11 +7,5 @@ go:
   - 1.12.x
   - 1.13.x
   - 1.14.x
-  - 1.15.x
-before_install:
-  - go get github.com/mattn/goveralls
-  - if ! go get github.com/golang/tools/cmd/cover; then go get golang.org/x/tools/cmd/cover; fi
 script:
   - go test ./...
-  - go test -c -covermode=count -coverpkg=github.com/sorenh/gotests,github.com/sorenh/gotests/internal/input,github.com/sorenh/gotests/internal/render,github.com/sorenh/gotests/internal/goparser,github.com/sorenh/gotests/internal/output,github.com/sorenh/gotests/internal/models
-  - ./gotests.test -test.coverprofile coverage.cov
